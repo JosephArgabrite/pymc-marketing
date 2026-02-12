@@ -84,7 +84,7 @@ plt.yticks(range(len(selected_features)), selected_features)
 plt.xlabel('Selected (1 = Yes)')
 plt.title('RFE Selected Features')
 plt.tight_layout()
-#plt.savefig("rfe_selected_features.png", dpi=300, bbox_inches='tight')
+plt.savefig("rfe_selected_features.png", dpi=300, bbox_inches='tight')
 plt.show()
 
 
@@ -135,7 +135,7 @@ for name,clf in rf_selected_classifier.items():
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
     plt.tight_layout()
-    #plt.savefig(f'{name.replace(' ', '_')}_confusion_matrix.png', dpi=300, bbox_inches='tight')
+    plt.savefig(f'{name.replace(' ', '_')}_confusion_matrix.png', dpi=300, bbox_inches='tight')
     plt.show()
     
     # Feature importance plot (for Random Forest only)
@@ -147,9 +147,9 @@ for name,clf in rf_selected_classifier.items():
         
         plt.figure(figsize=(10, 6))
         sns.barplot(x='Importance', y='Feature', data=importances.head(10))
-        plt.title('Top 3 Feature Importances - Random Forest (after RFE)')
+        plt.title('Top 6 Feature Importances - Random Forest (after RFE)')
         plt.xlabel('Importance')
         plt.tight_layout()
-        #plt.savefig('feature_importance_auto_insurance.png', dpi=300, bbox_inches='tight')
+        plt.savefig('feature_importance_auto_insurance.png', dpi=300, bbox_inches='tight')
         plt.show()
 
