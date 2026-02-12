@@ -14,7 +14,7 @@ Key insight: Radio generates ~1.39 sales units per $1 (8x more efficient than TV
 ### 2. Auto Insurance Lead Conversion Prediction
 Predict policy conversion from lead data (after fixing leakage in Time_to_Conversion).  
 Top features: Credit_Score, Source_of_Lead, Claims_Frequency.  
-🔗 [View project](insurance_auto/) | [Code](auto_insurance/auto_insurance_analysis.py)
+🔗 [View project](auto_insurance/) | [Code](auto_insurance/auto_insurance_analysis.py)
 
 ### 3. Gym Membership Churn Prediction
 Predict member cancellation using attendance, contract, and demographic data.  
